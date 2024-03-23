@@ -1,0 +1,44 @@
+Sex - płeć 0 - Kobieta , 1- mężczyzna
+GeneralHealth - Zdrowie ogólne,'Very good':2, 'Poor':5, 'Fair':4, 'Good':3, 'Excellent':1
+PhysicalHealthDays - zdrowiu fizycznym skala (0-30)
+MentalHealthDays - zdrowie psychiczne skala (0-30)
+PhysicalActivities - Aktywność fizyczna, Dorośli, którzy zgłosili, że w ciągu ostatnich 30 dni podejmowali aktywność fizyczną lub ćwiczenia inne niż zwykła praca, 0 nie, 1 tak 
+SleepHours - godziny snu
+HeartDisease - choroba serca, 0 nie, 1 tak
+HadAngina - (Czy kiedykolwiek mówiłeś) (miałeś) dławicę piersiową, 0 nie, 1 tak
+HadStroke - Udar, 0 Nie, 1 tak
+HadAsthma - (Czy kiedykolwiek mówiłeś) (miałeś) astmę, 0 Nie, 1 tak
+HadSkinCancer - (Czy kiedykolwiek mówiłeś) (miałeś) raka skóry, który nie jest czerniakiem, 0 Nie, 1 tak
+HadCOPD - (kiedykolwiek mówiłeś) (miałeś) C.O.P.D. (przewlekła obturacyjna choroba płuc), rozedma płuc czy przewlekłe zapalenie oskrzeli?, 0 Nie, 1 tak
+HadDepressiveDisorder - (Czy kiedykolwiek mówiłeś) (miałeś) zaburzenie depresyjne (w tym depresję, dużą depresję, dystymię lub niewielką depresję), 0 Nie, 1 tak
+HadKidneyDisease - Czy kiedykolwiek powiedziano Ci, że cierpisz na chorobę nerek, nie licząc kamieni nerkowych, infekcji pęcherza i nietrzymania moczu, 0 Nie, 1 tak
+HadArthritis - (Czy kiedykolwiek mówiłeś) (miałeś) jakąś postać zapalenia stawów, reumatoidalnego zapalenia stawów, dny moczanowej, tocznia lub fibromialgii, 0 Nie, 1 tak
+HadDiabetes - cukrzyca, 0 oznacza brak cukrzycy lub tylko w czasie ciąży, 1 oznacza stan przedcukrzycowy lub cukrzycę graniczną, 2 oznacza cukrzycę tak
+DeafOrHardOfHearing - Czy jesteś głuchy lub masz poważne problemy ze słuchem, 0 nie, 1 tak
+BlindOrVisionDifficulty - Czy jesteś niewidomy lub masz poważne trudności z widzeniem, nawet jeśli nosisz okulary, 0 nie, 1 tak
+DifficultyConcentrating - Czy ze względu na stan fizyczny, psychiczny lub emocjonalny masz poważne trudności z koncentracją, zapamiętywaniem lub podejmowaniem decyzji, 0 nie, 1 tak
+DifficultyWalking - Czy masz poważne trudności z chodzeniem lub wchodzeniem po schodach, 0 nie, 1 tak
+DifficultyDressingBathing - Czy masz trudności z ubieraniem się lub kąpielą, 0 nie, 1 tak
+DifficultyErrands - Czy ze względu na stan fizyczny, psychiczny lub emocjonalny masz trudności z samodzielnym załatwianiem spraw, takich jak wizyta u lekarza lub zakupy, 0 nie, 1 tak
+SmokerStatus - czy osoba pali papierosy, 0 nie, 1 tak
+ECigaretteUsage - Czy powiedziałbyś, że nigdy w życiu nie używałeś e-papierosów ani innych elektronicznych produktów do waporyzacji, 0 nie, 1 tak
+ChestScan - Czy kiedykolwiek wykonywałeś tomografię komputerową lub tomografię komputerową klatki piersiowej, 0 nie, 1 tak
+RaceEthnicityCategory - rasa, 'Black only,Non-Hispanic':0, 'Hispanic':1, 'Multiracial, Non-Hispanic':2, 'Other race only, Non-Hispanic':3,'White only, Non-Hispanic';4,'American Indian/Alaskan Native':5,'Asian':6
+AgeCategory - Czternastostopniowa kategoria wiekowa
+HeightInMeters - Podawana wysokość w metrach
+WeightInKilograms - Podana waga w kilogramach
+BMI - Wskaźnik masy ciała
+AlcoholDrinkers- osoby spożywające alkoholu, 0 nie, 1 tak
+HIVTesting - Dorośli, którzy kiedykolwiek byli badani na obecność wirusa HIV, 0 nie, 1 tak
+FluVaxLast12 - Czy w ciągu ostatnich 12 miesięcy otrzymywał(a) Pan(i) szczepionkę przeciw grypie rozpyloną do nosa lub wstrzykiwaną w ramię, 0 nie, 1 tak
+PneumoVaxEver - Czy kiedykolwiek zaszczepiłeś się przeciwko zapaleniu płuc, zwanej również szczepionką przeciw pneumokokom, 0 nie, 1 tak
+HighRiskLastYear - W ciągu ostatniego roku wstrzyknąłeś inny lek niż przepisany. W ciągu ostatniego roku byłeś leczony z powodu choroby przenoszonej drogą płciową, 0 nie, 1 tak
+CovidPos - Czy lekarz, pielęgniarka lub inny pracownik służby zdrowia powiedział Ci kiedykolwiek, że uzyskałeś pozytywny wynik testu na obecność Covid 19, 0 nie, 1 tak
+HighBP - Wysokie ciśnienie krwi, 0 nie jest wysokie ciśnienie krwi, 1 wysokie ciśnienie krwi 
+HighChol - Wysoki cholesterol, 0 nie jest wysoki cholesterol, 1 wysoki cholesterol
+CholCheck - Kontrola cholesterolu w ciągu ostatnich pięciu lat, 0 nie, 1 tak
+Fruits - spożywa owoce wiecej niż 1 dziennie, 0 nie, 1 tak
+Veggies - spożywa warzywa wiecej niż 1 dziennie, 0 nie, 1 tak
+AnyHealthcare - Czy posiadasz jakikolwiek rodzaj ubezpieczenia zdrowotnego, w tym ubezpieczenie zdrowotne, plany przedpłacone, takie jak HMO, lub plany rządowe, takie jak Medicare lub Indian Health Service, 0 nie, 1 tak
+NoDocbcCost - Czy w ciągu ostatnich 12 miesięcy był taki moment, że musiałeś udać się do lekarza, ale nie mogłeś tego zrobić ze względu na koszty, 0 nie, 1 tak
+Education - Jaka jest najwyższa klasa lub rok szkoły, którą ukończyłeś, To już jest zmienna porządkowa, gdzie 1 to osoba, która nigdy nie uczęszczała do szkoły ani przedszkola, a 6 to szkoła wyższa, która ukończyła 4 lata

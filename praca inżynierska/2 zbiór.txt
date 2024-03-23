@@ -1,0 +1,18 @@
+HeartDisease - choroba serca, 0 nie, 1 tak
+BMI - Wskaźnik masy ciała
+Smoking - czy osoba pali papierosy, 0 nie, 1 tak
+AlcoholDrinkers- osoby spożywające alkoholu, 0 nie, 1 tak
+Stroke - Udar, 0 Nie, 1 tak
+MentalHealth - zdrowie psychiczne skala (0-30)
+PhysicalHealth - zdrowiu fizycznym skala (0-30)
+Diffwalk - Czy masz poważne trudności z chodzeniem lub wchodzeniem po schodach, 0 nie, 1 tak
+Sex - płeć 0 - Kobieta , 1- mężczyzna
+Age - wiek
+Race - rasa, 'Black only,Non-Hispanic':0, 'Hispanic':1, 'Multiracial, Non-Hispanic':2, 'Other race only, Non-Hispanic':3,'White only, Non-Hispanic';4,'American Indian/Alaskan Native':5,'Asian':6
+Diabetes - cukrzyca, 0 oznacza brak cukrzycy lub tylko w czasie ciąży, 1 oznacza stan przedcukrzycowy lub cukrzycę graniczną, 2 oznacza cukrzycę tak
+PhysicalActivities - Aktywność fizyczna, Dorośli, którzy zgłosili, że w ciągu ostatnich 30 dni podejmowali aktywność fizyczną lub ćwiczenia inne niż zwykła praca, 0 nie, 1 tak 
+GeneralHealth - Zdrowie ogólne,'Very good':2, 'Poor':5, 'Fair':4, 'Good':3, 'Excellent':1
+Sleeptime - godziny snu
+Asthma - (Czy kiedykolwiek mówiłeś) (miałeś) astmę, 0 Nie, 1 tak
+KidneyDisease - Czy kiedykolwiek powiedziano Ci, że cierpisz na chorobę nerek, nie licząc kamieni nerkowych, infekcji pęcherza i nietrzymania moczu, 0 Nie, 1 tak
+SkinCancer - (Czy kiedykolwiek mówiłeś) (miałeś) raka skóry, który nie jest czerniakiem, 0 Nie, 1 tak

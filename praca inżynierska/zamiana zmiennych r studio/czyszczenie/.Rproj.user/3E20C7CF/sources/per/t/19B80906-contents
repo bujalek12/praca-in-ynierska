@@ -1,0 +1,512 @@
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(ChestPain = as.integer(ChestPain),
+Thal = as.integer(Thal),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca)
+)
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+View(t3.ostat.scaled)
+t3.ostat.scaled <- scale(t3.ostat)
+View(t3.ostat)
+View(t3)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+View(t3.f2.f2.u2)
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        AHD = as.integer(AHD)
+)
+View(t3.ostat)
+t3.ostat$AHD = t3.ostat$AHD - 1
+View(t3.ostat)
+t3.ostat%>%
+glimpse()
+t3.ostat.scaled <- scale(t3.ostat)
+View(t3)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostat.scaled <- scale(t3.ostat)
+t3.ostat.scaled<-t3.ostat.scaled[,14]
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostat.scaled<-t3.ostat.scaled[,14]
+t3.ostat.scaled<-t3.ostat.scaled[,-14]
+t3.ostat.scaled<-t3.ostat.scaled[,-13]
+t3.ostat<-t3.ostat[,-14]
+t3.ostat.scaled <- scale(t3.ostat)
+t3.ostat.scaled = mutate(t3.ostat,AHD)
+t3.ostat.scaled = mutate(t3.ostat,t3.ostat$AHD)
+View(t3.ostat.scaled)
+View(t3.ostat)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostatt<-t3.ostat[,-14]
+t3.ostat.scaled <- scale(t3.ostatt)
+t3.ostat.scaled = mutate(t3.ostat,t3.ostat$AHD)
+View(t3.ostat.scaled)
+t3.ostat.scaled = mutate(t3.ostat,AHD = t3.ostat$AHD)
+View(t3.ostat.scaled)
+write.csv(t3.ostat.scaled,file = "heartost.csv",row.names = F,sep = ",")
+library(tidyverse)
+library(missForest)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostatt<-t3.ostat[,-14]
+t3.ostat.scaled <- scale(t3.ostatt)
+t3.ostat.scaled = mutate(t3.ostat,AHD = t3.ostat$AHD)
+t3.ostat.scaled = mutate(t3.ostat.scaled,AHD = t3.ostat$AHD)
+t3.ostat.scaled <- scale(t3.ostatt)
+t3.ostat.scaled = mutate(t3.ostat.scaled,AHD = t3.ostat$AHD)
+t3.ostatt<-t3.ostat[,-14]
+t3.ostat.scaled <- scale(t3.ostat[,-14])
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+t3.ostat.scaled <- scale(t3.ostat[,-14])
+t3.ostat.scaled <- t3.ostat.scaled %>% mutate(t3.ostatt,AHD = t3.ostat$AHD)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,t3.ostatt$AHD)
+View(t3.ostat.scaled)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,t3.ostat$AHD)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,AHD=t3.ostat$AHD)
+.
+.
+.
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+install.packages("factoextra")
+install.packages("factoextra")
+library(cluster)
+library(factoextra)
+t3.ostatt<-t3.ostat[,-14]
+t3.ostat.scaled <- scale(t3.ostat[,-14])
+t3.ostat.scaled<-cbind(t3.ostat.scaled,AHD=t3.ostat$AHD)
+write.csv(t3.ostat.scaled,file = "heartost.csv",row.names = F,sep = ",")
+q()
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+levels(t3.f2.f2.u2$plec)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal),
+plec = as.integer(plec)
+)
+library(tidyverse)
+library(missForest)
+View(t3)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostatt<-t3.ostat[,-3]
+t3.ostatt<-t3.ostat[,-13]
+t3.ostat.scaled <- scale(t3.ostatt)
+View(t3.ostat.scaled)
+View(t3.ostatt)
+t3.ostatt<-t3.ostat[,-3]
+View(t3.ostatt)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostatt<-t3.ostat[,-2]
+View(t3.ostat)
+View(t3.ostat)
+t3.ostatt<-t3.ostat[,-2]
+t3.ostatt<-t3.ostat[,-13]
+View(t3.ostatt)
+View(t3.ostatt)
+t3.ostatt<-t3.ostat[-2,]
+View(t3.ostatt)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostat.scaled <- scale(t3.ostat[c(-14,-2)])
+t3.ostat.scaled<-cbind(t3.ostat.scaled,AHD=t3.ostat$AHD)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,plec=t3.ostat$plec)
+View(t3.ostat.scaled)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,plec=t3.ostat$plec)
+View(t3)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,Sex=t3.ostat$Sex)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostat.scaled <- scale(t3.ostat[c(-14,-2)])
+t3.ostat.scaled<-cbind(t3.ostat.scaled,AHD=t3.ostat$AHD)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,Sex=t3.ostat$Sex)
+write.csv(t3.ostat.scaled,file = "heartost.csv",row.names = F,sep = ",")
+q()
+library(missForest)
+library(tidyverse)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat$AHD = t3.ostat$AHD - 1
+t3.ostat%>%
+glimpse()
+library(cluster)
+library(factoextra)
+t3.ostat.scaled <- scale(t3.ostat[c(-14,-2)])
+t3.ostat.scaled2 <- scale(t3.ostat[c(-14,-2,-1)])
+t3.ostat.scaled<-cbind(t3.ostat.scaled,AHD=t3.ostat$AHD)
+t3.ostat.scaled<-cbind(t3.ostat.scaled,Sex=t3.ostat$Sex)
+t3.ostat.scaled2<-cbind(t3.ostat.scaled2,AHD=t3.ostat$AHD)
+t3.ostat.scaled2<-cbind(t3.ostat.scaled2,Sex=t3.ostat$Sex)
+t3.ostat.scaled2<-cbind(t3.ostat.scaled2,Age=t3.ostat$Age)
+View(t3.ostat.scaled)
+View(t3.ostat.scaled2)
+write.csv(t3.ostat.scaled,file = "heartost.csv",row.names = F,sep = ",")
+write.csv(t3.ostat.scaled2,file = "heartost2.csv",row.names = F,sep = ",")
+q()
+View(t3)
+t3<-read.csv("Heart.csv", header = TRUE)
+t3%>%
+glimpse()
+#po wczytaniu danych sprawdzamy je i jak sie okazuje znajdują się w nich braki w pojedynczych zmiennych
+table(complete.cases(t3))
+library(mice)
+md.pattern(t3)
+t3.f2 <- t3 %>%
+mutate(ChestPain = as_factor(ChestPain),
+Thal = as_factor(Thal),
+AHD = as_factor(AHD),
+Ca = as_factor(as.integer(Ca))
+)
+temp <- missForest(t3.f2[-1])
+t3.f2.f2.u2<-temp$ximp
+summary(t3.f2.f2.u2)
+table(complete.cases(t3.f2.f2.u2))
+levels(t3.f2.f2.u2$AHD)<- c(0, 1)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+library(tidyverse)
+t3.ostat <- t3.f2.f2.u2 %>%
+mutate(        ChestPain = as.integer(ChestPain),
+AHD = as.integer(AHD),
+Ca = as.integer(Ca),
+Thal = as.integer(Thal)
+)
+t3.ostat%>%
+glimpse()
+View(t3.f2.f2.u2)
+View(t3.ostat.scaled)

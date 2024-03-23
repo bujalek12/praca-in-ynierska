@@ -1,0 +1,112 @@
+df = read.csv('heart_2022_no_nans.csv')
+
+df$Sex = factor(df$Sex,
+                           levels = c('Female', 'Male'),
+                           labels = c(0, 1))
+
+df$GeneralHealth = factor(df$GeneralHealth,
+                levels = c('Very good', 'Poor', 'Fair', 'Good', 'Excellent'),
+                labels = c(2, 5,4,3,1))
+
+df$PhysicalActivities = factor(df$PhysicalActivities,
+                           levels = c('No', 'Yes'),
+                           labels = c(0, 1))
+df$HadHeartAttack = factor(df$HadHeartAttack,
+                               levels = c('No', 'Yes'),
+                               labels = c(0, 1))
+
+df$HadAngina = factor(df$HadAngina,
+                           levels = c('No', 'Yes'),
+                           labels = c(0, 1))
+
+df$HadStroke = factor(df$HadStroke,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$HadAsthma = factor(df$HadAsthma,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$HadSkinCancer = factor(df$HadSkinCancer,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+dfHadCOPD = factor(df$HadCOPD,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$HadDepressiveDisorder = factor(df$HadDepressiveDisorder,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$HadKidneyDisease = factor(df$HadKidneyDisease,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$HadArthritis = factor(df$HadArthritis,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$HadCOPD = factor(df$HadCOPD,
+                         levels = c('No', 'Yes'),
+                         labels = c(0, 1))
+
+df$HadDiabetes = factor(df$HadDiabetes,
+                      levels = c('No', 'Yes','Yes, but only during pregnancy (female)','No, pre-diabetes or borderline diabetes'),
+                      labels = c(0, 2,0,1))
+
+df$DeafOrHardOfHearing = factor(df$DeafOrHardOfHearing,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$BlindOrVisionDifficulty = factor(df$BlindOrVisionDifficulty,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$DifficultyConcentrating = factor(df$DifficultyConcentrating,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$DifficultyWalking = factor(df$DifficultyWalking,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$DifficultyDressingBathing = factor(df$DifficultyDressingBathing,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$DifficultyErrands = factor(df$DifficultyErrands,
+                      levels = c('No', 'Yes'),
+                      labels = c(0, 1))
+
+df$ChestScan = factor(df$ChestScan,
+                              levels = c('No', 'Yes'),
+                              labels = c(0, 1))
+df$AlcoholDrinkers = factor(df$AlcoholDrinkers,
+                              levels = c('No', 'Yes'),
+                              labels = c(0, 1))
+df$HIVTesting = factor(df$HIVTesting,
+                              levels = c('No', 'Yes'),
+                              labels = c(0, 1))
+df$FluVaxLast12 = factor(df$FluVaxLast12,
+                              levels = c('No', 'Yes'),
+                              labels = c(0, 1))
+df$PneumoVaxEver = factor(df$PneumoVaxEver,
+                              levels = c('No', 'Yes'),
+                              labels = c(0, 1))
+df$HighRiskLastYear = factor(df$HighRiskLastYear,
+                              levels = c('No', 'Yes'),
+                              labels = c(0, 1))
+df$CovidPos = factor(df$CovidPos,
+                              levels = c('No', 'Yes'),
+                              labels = c(0, 1))
+
+df$SmokerStatus = factor(df$SmokerStatus,
+                     levels = c('Former smoker', 'Never smoked', 'Current smoker - now smokes every day', 'Current smoker - now smokes some days'),
+                     labels = c(0, 0,1,1))
+
+df$AgeCategory = factor(df$AgeCategory,
+                         levels = c('Age 18 to 24', 'Age 25 to 29', 'Age 30 to 34', 'Age 35 to 39', 'Age 40 to 44', 'Age 45 to 49', 'Age 50 to 54', 'Age 55 to 59', 'Age 60 to 64', 'Age 65 to 69', 'Age 70 to 74', 'Age 75 to 79', 'Age 80 or older'),
+                         labels = c(1,2,3,4,5,6,7,8,9,10,11,12,13))
+
+write.csv(df,file = "heart2022r.csv",row.names = F,sep = ",")

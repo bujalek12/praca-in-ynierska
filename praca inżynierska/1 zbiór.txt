@@ -1,0 +1,21 @@
+HeartDisease - choroba serca, 0 nie, 1 tak
+HighBP - Wysokie ciśnienie krwi, 0 nie jest wysokie ciśnienie krwi, 1 wysokie ciśnienie krwi 
+HighChol - Wysoki cholesterol, 0 nie jest wysoki cholesterol, 1 wysoki cholesterol
+CholCheck - Kontrola cholesterolu w ciągu ostatnich pięciu lat, 0 nie, 1 tak
+BMI - Wskaźnik masy ciała
+Smoker - czy osoba pali papierosy, 0 nie, 1 tak
+Stroke - Udar, 0 Nie, 1 tak
+Diabetes - cukrzyca, 0 oznacza brak cukrzycy lub tylko w czasie ciąży, 1 oznacza stan przedcukrzycowy lub cukrzycę graniczną, 2 oznacza cukrzycę tak
+PhysicalActivities - Aktywność fizyczna, Dorośli, którzy zgłosili, że w ciągu ostatnich 30 dni podejmowali aktywność fizyczną lub ćwiczenia inne niż zwykła praca, 0 nie, 1 tak 
+Fruits - spożywa owoce wiecej niż 1 dziennie, 0 nie, 1 tak
+Veggies - spożywa warzywa wiecej niż 1 dziennie, 0 nie, 1 tak
+HvyAlcoholConsump- osoby spożywające dużo alkoholu alkoholu, 0 nie, 1 tak
+AnyHealthcare - Czy posiadasz jakikolwiek rodzaj ubezpieczenia zdrowotnego, w tym ubezpieczenie zdrowotne, plany przedpłacone, takie jak HMO, lub plany rządowe, takie jak Medicare lub Indian Health Service, 0 nie, 1 tak
+NoDocbcCost - Czy w ciągu ostatnich 12 miesięcy był taki moment, że musiałeś udać się do lekarza, ale nie mogłeś tego zrobić ze względu na koszty, 0 nie, 1 tak
+GeneralHealth - Zdrowie ogólne,'Very good':2, 'Poor':5, 'Fair':4, 'Good':3, 'Excellent':1
+MentalHealthDays - zdrowie psychiczne skala (0-30)
+PhysicalHealthDays - zdrowiu fizycznym skala (0-30)
+Diffwalk - Czy masz poważne trudności z chodzeniem lub wchodzeniem po schodach, 0 nie, 1 tak
+Sex - płeć 0 - Kobieta , 1- mężczyzna
+Age - wiek
+Education - Jaka jest najwyższa klasa lub rok szkoły, którą ukończyłeś, To już jest zmienna porządkowa, gdzie 1 to osoba, która nigdy nie uczęszczała do szkoły ani przedszkola, a 6 to szkoła wyższa, która ukończyła 4 lata
